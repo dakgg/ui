@@ -195,10 +195,9 @@ namespace ViewSystem
         }
     }
 
-    [RequiredReference]
     public class ModalView : ViewBase
     {
-        [SerializeField, RequiredReference(false)] AnimationSet m_OpenAnimationSet;
+        [SerializeField] AnimationSet m_OpenAnimationSet;
 
         public override ViewPropertyParams GetViewProperty()
         {
@@ -229,7 +228,7 @@ namespace ViewSystem
 
     public class PageView : ViewBase
     {
-        [SerializeField, RequiredReference(false)] List<AnimationSet> m_OpenAnimationSets;
+        [SerializeField] List<AnimationSet> m_OpenAnimationSets;
 
         public override ViewPropertyParams GetViewProperty()
         {
@@ -259,9 +258,9 @@ namespace ViewSystem
     [System.Serializable]
     public class AnimationSet
     {
-        [SerializeField, RequiredReference(false)] public UIAnimation Animation;
-        [SerializeField, RequiredReference(false)] public AnimationClip FoldAnimationClip;
-        [SerializeField, RequiredReference(false)] public AnimationClip UnfoldAnimationClip;
+        [SerializeField] public UIAnimation Animation;
+        [SerializeField] public AnimationClip FoldAnimationClip;
+        [SerializeField] public AnimationClip UnfoldAnimationClip;
 
         public IEnumerator CoPlayAnimation(bool isOpen)
         {
