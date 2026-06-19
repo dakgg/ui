@@ -9,7 +9,7 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace ViewSystem
 {
-    public class ViewManager : MonoBehaviour, IViewLayerListener, IServiceLocatorComponent, IServiceLocatorSetupComponent
+    public class ViewManager : MonoBehaviour, IViewLayerListener
     {
         public static int UnityThreadId { get; private set; }
         const int MAX_COUNT_PER_LAYER = 100;

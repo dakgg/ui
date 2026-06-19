@@ -25,8 +25,6 @@ namespace ViewSystem
             if (!m_NeedRaycaster) return;
             if (m_Racaster == null) m_Racaster = gameObject.AddComponent<GraphicRaycaster>();
             m_Racaster.enabled = m_NeedRaycaster;
-
-            gameObject.AddComponent<ServiceLocator>();
         }
     }
 

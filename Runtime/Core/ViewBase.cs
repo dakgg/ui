@@ -168,8 +168,6 @@ namespace ViewSystem
                 //when loaded by scene. we don't rebuild entire ui. so disable canvas first
                 //will be enabled later in Add
                 ViewManager.TrackView(viewName, m_TargetView);
-                
-                m_TargetView.gameObject.AddComponent<ServiceLocator>();
 
                 //register updater listener if needed
                 if (m_TargetView is IViewUpdateListener updatelistener) UIVisiblity.RegisterUpdate(updatelistener, gameObject);
