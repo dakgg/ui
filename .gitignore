@@ -1,0 +1,24 @@
+# This is a Unity package repository.
+# IMPORTANT: .meta files must be committed — do NOT ignore them.
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# IDE
+.idea/
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.user
+
+# Build / temp output (in case the package is opened inside a project)
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+[Bb]uild/

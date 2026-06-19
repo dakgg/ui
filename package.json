@@ -1,0 +1,23 @@
+{
+  "name": "com.dakgg.ui",
+  "version": "0.1.0",
+  "displayName": "ViewSystem UI Framework",
+  "description": "A view/UI management framework for Unity. Provides view stacking, focus and input control, layered canvases, and Addressables-based loading.",
+  "unity": "2021.3",
+  "keywords": [
+    "ui",
+    "view",
+    "ugui",
+    "framework",
+    "addressables"
+  ],
+  "author": {
+    "name": "dakgg",
+    "email": "haeseung@wizely.co.kr",
+    "url": "https://github.com/dakgg"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.addressables": "1.19.19"
+  }
+}
