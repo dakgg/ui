@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace ViewSystem
@@ -325,7 +326,7 @@ namespace ViewSystem
 
         private void Update()
         {
-            if (!EscapeControl && m_Focused != null && Input.GetKeyDown(KeyCode.Escape))
+            if (!EscapeControl && m_Focused != null && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
                 m_Focused.SetBackButtonInternal();
 
             //orientation callback does not immedietly applied to safearea

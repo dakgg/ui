@@ -30,11 +30,6 @@ namespace ViewSystem
                 var baseScene = SceneManager.GetSceneAt(0);
                 if (sRoot.scene != baseScene) SceneManager.MoveGameObjectToScene(sRoot, baseScene);
                 s_SceneInstance = sRoot.GetComponent<Canvas>();
-
-                //this code do dpi-aware dragthreshold correction
-                int defaultValue = 15;
-                EventSystem.current.pixelDragThreshold = Mathf.Max(defaultValue, (int)(defaultValue * Screen.dpi / 160f));
-                EventSystem.current.sendNavigationEvents = false;
             }
             return s_SceneInstance.transform;
         }
